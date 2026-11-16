@@ -1,0 +1,30 @@
+{
+  "name": "ortopoly",
+  "version": "1.0.0",
+  "description": "Juego de bienes raíces multijugador en tiempo real (3 a 8 jugadores) con Node.js, Express y Socket.IO.",
+  "type": "module",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "e2e": "node scripts/e2e.mjs",
+    "online": "node scripts/online.mjs"
+  },
+  "engines": {
+    "node": ">=18.17"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "socket.io": "^4.8.1"
+  },
+  "optionalDependencies": {
+    "redis": "^4.7.0"
+  },
+  "devDependencies": {
+    "socket.io-client": "^4.8.1",
+    "vitest": "^3.2.4"
+  },
+  "license": "MIT"
+}
